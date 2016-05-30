@@ -46,21 +46,6 @@ public class AnonymousInner {
     }
 }
 
-// Anonymous flavour 2
-interface Cookable {
-
-    void cook();
-
-    class Food {
-        Cookable c = new Cookable() {
-            @Override
-            public void cook() {
-                System.out.println("Anonymous cookable implementer");
-            }
-        };
-    }
-}
-
 // Argument-defined Anonymous Inner Classes
 interface LivingThing {
 
